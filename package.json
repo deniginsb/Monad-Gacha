@@ -1,0 +1,13 @@
+{
+  "name": "monad-gacha",
+  "private": true,
+  "workspaces": ["packages/*", "apps/*"],
+  "scripts": {
+    "postinstall": "npm -w @gacha/contracts run build",
+    "dev": "npm -w @gacha/web run dev",
+    "test": "npm -w @gacha/contracts run test",
+    "build:web": "npm -w @gacha/web run build",
+    "start:web": "npm -w @gacha/web run start"
+  }
+}
+
